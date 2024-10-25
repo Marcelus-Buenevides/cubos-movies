@@ -1,30 +1,42 @@
-🎬 Movie App
+# 🎬 **Movie App**
+
 Este é um projeto de uma aplicação web para listar e explorar filmes, com base na API do The Movie Database (TMDB). A aplicação permite pesquisar filmes, aplicar filtros de gênero e ordenação, alternar entre temas claro e escuro, e visualizar detalhes de cada filme.
 
-📋 Requisitos
-Node.js (v14 ou superior)
-Yarn (ou npm, mas recomendamos Yarn para manter a consistência com o projeto)
-🚀 Instalação e Configuração
-1. Clonar o Repositório
-bash
-Copiar código
+## **📋 Requisitos**
+
+- **Node.js** (v14 ou superior)
+- **Yarn** (ou npm, mas recomendamos Yarn para manter a consistência com o projeto)
+
+## **🚀 Instalação e Configuração**
+
+### **1. Clonar o Repositório**
+
+```bash
 git clone <URL-DO-REPOSITORIO>
 cd movie-app
-2. Instalar Dependências
-bash
-Copiar código
+```
+
+### **2. Instalar Dependências**
+
+```bash
 yarn install
+```
+
 ou
 
-bash
-Copiar código
+### **2. Instalar Dependências**
+
+```bash
 npm install
-3. Configurar Variáveis de Ambiente
+
+```
+
+### **3. Configurar Variáveis de Ambiente**
+
 Antes de iniciar a aplicação, é necessário criar um arquivo .env.local na raiz do projeto para armazenar as variáveis de ambiente. Um exemplo de como esse arquivo deve ser configurado está abaixo:
 
-Exemplo .env.local
-env
-Copiar código
+exemplo .env.local:
+
 # Chave da API do The Movie Database (TMDB)
 NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key_here
 
@@ -32,20 +44,25 @@ NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key_here
 NEXT_PUBLIC_TMDB_BASE_URL=https://api.themoviedb.org/3
 
 # Outras configurações opcionais, se necessário
+
 Nota: Substitua your_tmdb_api_key_here pela sua chave de API do TMDB. Você pode obter uma chave criando uma conta em TMDB e acessando as configurações de API.
 
-4. Executar a Aplicação
-Após configurar o arquivo .env.local, inicie a aplicação em modo de desenvolvimento:
+### **4. Executar a Aplicação**
 
-bash
-Copiar código
+```bash
 yarn dev
+
+```
+
 ou
 
-bash
-Copiar código
+```bash
 npm run dev
+
+```
+
 Acesse a aplicação no navegador: http://localhost:3000.
+
 
 🛠 Tecnologias Utilizadas
 Next.js: Framework React para renderização server-side e geração estática.
@@ -57,6 +74,7 @@ Axios: Para chamadas HTTP à API do TMDB.
 React Icons: Para adicionar ícones na interface de forma fácil.
 React Hook Form: Para gerenciamento de formulários e validação.
 Yarn: Gerenciador de pacotes para instalação de dependências.
+
 📂 Estrutura de Pastas
 /components: Contém componentes reutilizáveis, como MovieList, Pagination, SearchFilters, etc.
 /contexts: Gerencia estados globais, como tema e gêneros de filmes.
